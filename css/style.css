@@ -1,0 +1,335 @@
+/*
+------------------------------------------------
+DEFAULT STYLE START
+------------------------------------------------
+*/
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:100,300,700');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: #fff;
+  font-family: "Roboto";
+  overflow-x: hidden;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.list-items {
+  list-style-type: none;
+}
+
+.anchor-items {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+
+/*
+-----------------------------------------------
+BTN STYLE
+-----------------------------------------------
+*/
+
+.btn {
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1em;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 50px;
+}
+
+.btn-yellow {
+  background: rgb(240, 146, 51);
+}
+
+.btn-red {
+  background: rgb(203, 56, 55);
+}
+
+.btn-grey {
+  background: rgb(49, 68, 88);
+}
+
+/*
+-----------------------------------------------
+FONT STYLES
+-----------------------------------------------
+*/
+.font-grey  {
+  color: rgb(83, 88, 98);
+}
+
+.font-paragraphe {
+  color: rgb(135, 145, 156);
+}
+
+.white {
+  color: #fff;
+}
+
+.red-links {
+  color: rgb(208, 74, 73);
+}
+
+
+/*
+-----------------------------------------------
+SECTION STYLE
+-----------------------------------------------
+*/
+.section-padding {
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+
+.txt-section {
+  color: #fff;
+  line-height: 1.5;
+}
+
+.sub-title-section {
+  font-size: 2.5em;
+  font-weight: 500;
+  color: #fff;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  display: block;
+}
+
+/*
+I've used grid template only to test something
+however i can also use float:left
+*/
+.grid-col-3 {
+  width: 85%;
+  display: grid;
+  grid-template-columns: repeat(3,300px);
+  grid-gap: 1rem;
+  margin: 0 auto; /* Isn't a mistake to use margin: 0 auto with grid ?? */
+}
+
+.margin-top {
+  margin-top: 40px;
+}
+
+/*
+------------------------------------------------
+DEFAULT STYLE END
+------------------------------------------------
+*/
+
+
+
+/*
+------------------------------------------------
+NAV STYLES
+------------------------------------------------
+*/
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #C12127;
+  color: rgba(255,255,255,0.8);
+  padding-top: 15px;
+  padding-left: 15px;
+  height: 50px;
+  z-index: 999;
+  
+}
+
+nav a {
+  color: rgba(255,255,255,0.8);
+  text-decoration: none;
+}
+
+.top-left {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.top-links {
+  display: inline-block;
+  vertical-align: middle;
+  float: right;
+  padding: 0;
+  margin: 0 20px 0 0;
+}
+
+.top-links li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+
+/*
+------------------------------------------------
+HEADER STYLES
+------------------------------------------------
+*/
+
+header {
+  background: url("../images/city-scape.svg") 0 0 no-repeat;
+  background-size: cover;
+  height: 550px;
+  padding: 63px;
+}
+
+header .search-bar .logo img {
+  width: 75px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+header .input-search {
+  margin: 0 20px;
+}
+
+header .input-search input {
+  outline: none;
+  width: 70%;
+  padding: 15px;
+  background: rgb(31, 82, 111);
+  border: 1px solid rgba(160, 209, 238, 0.2);
+}
+
+header .search-bar .identification-items,
+header .search-bar .identification-items li {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+header .search-bar .input-search button {
+  outline: none;
+  padding: 15px 20px;
+  background: rgb(31, 82, 111);
+  border: 1px solid rgba(160, 209, 238, 0.2);
+  margin-left: -4px;
+}
+
+header .search-bar .identification-items img {
+  width: 30px;
+  margin-left: 5px;
+}
+
+header .content-text {
+  width: 900px;
+  margin: 0 auto;
+  padding-top: 90px;
+  color: #fff;
+}
+
+header .content-text h1 {
+  font-size: 3.4em;
+  font-weight: normal;
+}
+
+header .content-text p {
+  margin: 40px 0;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+
+/*
+------------------------------------------------
+SECTION 1 ORGS STYLES
+------------------------------------------------
+*/
+
+.section-orgs {
+  background: rgb(39, 53, 71);
+  height: 450px;
+  color: #fff;
+}
+
+.section-orgs .box-orgs {
+  float: left;
+  width: 42%;
+}
+
+.section-orgs .box-orgs img {
+  width: 450px;
+  float: left;
+}
+
+.section-orgs .box-orgs .items-orgs {
+  margin-top: 25px;
+  margin-left: 45px;
+  line-height: 2.5;
+}
+
+.learn-more-margin {
+  margin-top: 20px;
+}
+
+
+/*
+------------------------------------------------
+SECTION 2 NPM STYLES
+------------------------------------------------
+*/
+
+.section-npm {
+  position: relative;
+  background: url("../images/forklift.svg") 0 0 no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+
+.section-npm .box-txt {
+  margin-top: 25px;
+}
+
+.section-npm .box-txt button {
+  margin-top: 15px;
+}
+
+
+/*
+------------------------------------------------
+SECTION 3 BULDING STYLES
+------------------------------------------------
+*/
+
+.section-building .box-building {
+  text-align: center;
+  padding: 10px;
+  line-height: 1.5;
+}
+
+.section-building p {
+  margin-top: 15px;
+}
+
+.section-building .box-building a {
+  color: rgb(135, 145, 156);
+  text-decoration: none;
+}
+
+.section-building .box-building h5 {
+  margin-bottom: 15px;
+}
